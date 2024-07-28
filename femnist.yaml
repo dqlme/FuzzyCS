@@ -1,0 +1,44 @@
+#common_args:
+  training_type: "simulation"
+  random_seed: 1
+  config_version: release
+
+#data_args:
+  dataset: "femnist"
+  data_cache_dir: datas/dataset/FederatedEMNIST/datasets/
+  partition_method: "hetero"
+  partition_alpha: 0.5
+  stragglers_percent: 50
+  data_compute_correlation: 0.1
+
+#model_args:
+  model: "cnn"
+
+#train_args:
+  federated_optimizer: "FedAvg"
+  client_id_list: "[]"
+  client_num_in_total: 3400
+  comm_round: 500
+  epochs: 1
+  batch_size: 16
+  client_optimizer: sgd
+  learning_rate: 0.03
+  weight_decay: 0.001
+  fedprox_mu: 0.0
+  drop_stragglers: false
+  # alpha_: 0.5
+#validation_args:
+  frequency_of_the_test: 1
+
+#selection_args:
+# choice: [Random, AFL]
+  # client_sampling_method: AFL
+  # alpha1: 0.75
+  # alpha2: 0.01
+  # alpha3: 0.1
+
+  enable_tracking: false
+  enable_wandb: false
+  log_file_dir: ./log
+  record_dir: ./log
+  record_file: femnist
