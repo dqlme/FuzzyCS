@@ -1,3 +1,5 @@
+## copy from https://github1s.com/SymbioticLab/Oort
+
 import numpy as np
 from .selection_base import SelectionBase
 import math
