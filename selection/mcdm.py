@@ -1,3 +1,5 @@
+# This is the fuzzycs method.
+
 from copy import deepcopy
 import numpy as np
 from .selection_base import SelectionBase
