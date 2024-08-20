@@ -26,7 +26,7 @@ The result shows that FuzzyCS has the highest overall ranking in terms of both p
 
 - We provide a  plug-and-play platform for federated client selection.
 
-- This platform is consisted of the following content:
+- This platform is consisted of the following content
 
 - ```
   |---clients
